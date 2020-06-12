@@ -16,7 +16,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: azure-vote-back
-        image: redis
+        image: sylchamberitqformk8s.azurecr.io/redis:latest
         ports:
         - containerPort: 6379
           name: redis
@@ -54,7 +54,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: azure-vote-front
-        image: microsoft/azure-vote-front:v1
+        image: sylchamberitqformk8s.azurecr.io/azure-vote-front:latest
         ports:
         - containerPort: 80
         resources:
